@@ -16,6 +16,8 @@ CMD yarn dev --host
 
 FROM base AS build-stage
 
+RUN rm .env
+
 RUN yarn build
 
 FROM nginx:stable-alpine AS production-stage
