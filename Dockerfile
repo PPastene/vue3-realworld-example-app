@@ -16,7 +16,7 @@ CMD yarn dev --host
 
 FROM base AS build-stage
 
-RUN rm .env
+RUN rm -f .env
 
 RUN yarn build
 
